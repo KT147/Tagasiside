@@ -40,3 +40,12 @@
 .read-the-docs {
   color: #888;
 }
+
+
+.tulp {
+  column-count: 5;
+  column-gap: 20px;
+  color: purple;
+  font-weight: bold;
+  
+}
