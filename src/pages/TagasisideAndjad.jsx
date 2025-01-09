@@ -6,7 +6,10 @@ function TagasisideAndjad() {
 
     const [nimed, setNimed] = useState(nimedJSON)
 
+
     const nimedRef= useRef()
+
+    // miks nimedJSON puhul ka asi toimib, aga lehele lisandub ainult max 1 nimi?
 
     const lisaUus = () => {
         nimed.push(nimedRef.current.value)
@@ -40,6 +43,12 @@ function TagasisideAndjad() {
         setNimed(vastus)
     }
 
+
+    // eemalda 1 element alustades indexist, ehk eemalda 1 indexiga seotud element?
+
+    // splice ja slice?? splice võtab ära, mis sulgude sees määratud, aga slice jätab selle osa alles?
+
+
     const kustutaNimi = (index) =>{
         nimed.splice(index,1)
         setNimed(nimed.slice())
@@ -49,6 +58,8 @@ function TagasisideAndjad() {
 
 
   return (
+
+    // Miks inputi ees alati label on, mis juhtub, kui see asendada div-ga?
   <>
    <br /> <br />
    <div>Nimede arv kokku: {nimed.length} tk</div> <br />
